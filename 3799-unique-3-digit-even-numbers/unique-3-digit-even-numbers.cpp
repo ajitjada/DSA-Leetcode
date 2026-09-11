@@ -19,9 +19,7 @@ public:
                     ans = ans * 10 + digits[k];
 
                     if(ans % 2 == 0) {
-                        if(s.find(ans) == s.end()) {
-                            s.insert(ans);
-                        }
+                        s.insert(ans);
                     }
                     ans /= 10;
                 }
